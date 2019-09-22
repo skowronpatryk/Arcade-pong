@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Game Over";
+    src: url("./font/game_over.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+}
+
+#canvasGame {
+    opacity: 1;
+}
+
+.gameInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    font-family: 'Game Over';
+    opacity: 1;
+    position: relative;
+    z-index: 22;
+}
+
+.gameTitle {
+    font-size: 220px;
+}
+
+.pvp-right-hint {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+.pvp-right-hint h3 {
+    font-size: 180px;
+}
+
+.pvp-right-hint p {
+    font-size: 120px;
+}
+
+
+
+@keyframes fade {
+ 0% {
+     opacity: 0;
+ }
+
+ 50% {
+     opacity: 1;
+ }
+
+ 100% {
+     opacity: 0;
+ }
+}
